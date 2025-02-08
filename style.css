@@ -20,16 +20,16 @@
 
 .IncialInfo{
     position: absolute;
-    background-image:url("./src/fundo/5.jpg");
+    background-image:url("./src/fundo/7.jpeg");
     background-size: cover;
     width: 100%;
-    height: 86%;
-    top: 14vh;
+    height: 100%;
+    top: 0;
     left: 0;
 }
 
 .escurecer{
-    background-color: #ffffff17;
+    background-color: #000000a2;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -41,17 +41,35 @@
     position: absolute;
     width: 150vh;
     height: 75vh;
-    top: 7vh;
+    top: 20vh;
     background-color: black;
     left: 20vh;
 }
 
 .info{
     color: white;
-    font-size: 2.5vh;
-    font-family: "BebasNeue";
     text-align: center;
     position: absolute;
     width: 100%;
     top: 10vh;
+}
+
+.info h1{
+    font-size: 5vh;
+    font-family: "Akira";
+}
+
+.titulo{
+    font-size: 2.5vh;
+    font-family: "BebasNeue";
+    font-style: italic;
+}
+
+.sobre{
+    font-size: 3vh;
+    text-align: justify;
+    width: 86%;
+    margin-top: 4%;
+    margin-left: 6%;
+    font-family: "BebasNeue";
 }
