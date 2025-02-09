@@ -2,7 +2,7 @@
     background-color: #000;
     width: 100%;
     height: 15vh; /* Use viewport height for better responsiveness */
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     z-index: 1;
@@ -72,4 +72,66 @@
     margin-top: 4%;
     margin-left: 6%;
     font-family: "BebasNeue";
+}
+
+.social{
+    position: absolute;
+    width: 100%;
+    height: 15vh;
+    align-items: center;
+    top: 33vh;
+}
+
+.social p{
+    font-size: 2vh;
+    font-family: "Akira";
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-top: 2vh;
+}
+
+.github{
+    width: 10vh;
+    height: 10vh;
+    font-size: 7vh;
+    background-size: cover;
+    position: absolute;
+    left: 35%;
+    margin-top: 2%;
+    top: 2.5vh;
+}
+
+
+.linkedin{
+    width: 10vh;
+    height: 10vh;
+    font-size: 7vh;
+    background-size: cover;
+    position: absolute;
+    left: 44%;
+    top: 2.5vh;
+    margin-top: 2%;
+}
+
+span{
+    position: absolute;
+    font-size: 1.5vh;
+    font-family: "Akira";
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-top: 12vh;
+    left: 35%;
+}
+
+.instagram{
+    width: 10vh;
+    height: 10vh;
+    font-size: 6vh;
+    background-size: cover;
+    position: absolute;
+    left: 54%;
+    top: 2.5vh;
+    margin-top: 2%;
 }
