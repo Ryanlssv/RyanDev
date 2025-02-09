@@ -10,7 +10,7 @@
 
 .logo-conteiner{
     width: 15vh;
-    margin-left: 5vh;
+    margin-left: 10vh;
 }
 
 .logo-img{
@@ -114,7 +114,7 @@
     margin-top: 2%;
 }
 
-span{
+.social span{
     position: absolute;
     font-size: 1.5vh;
     font-family: "Akira";
@@ -134,4 +134,33 @@ span{
     left: 54%;
     top: 2.5vh;
     margin-top: 2%;
+}
+
+.Nav-container{
+    position: absolute;
+    top: 6vh;
+    left: 30%;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-item{
+    margin-left: 4vh;
+}
+
+
+.nav-item a{
+    color: white;
+    font-size: 2vh;
+    font-family: "Akira";
+    text-decoration: none;
+}
+
+.nav-item a:hover{
+    color: #696868;
+    transition: 1s;
 }
