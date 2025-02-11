@@ -4,12 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="./CSS/font.css">
+    <link rel="stylesheet" href="./CSS/animacao.css">
     <link rel="shortcut icon" href="./src/logo/R L logo.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <title>Dev Ryan</title>
 </head>
 <body>
+    <div class="carregando" >
+        <span class="pontos"></span>
+        <span class="pontos"></span>
+        <span class="pontos"></span>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    $(window).on("load",function(){
+      $(".carregando").fadeOut(1000);
+    });
+    </script>
     <header class="header">
         <div class="container-header" >
             <div class="logo-conteiner" >
@@ -18,10 +30,8 @@
             <div class="Nav-container">
                 <nav>
                     <ul class="nav" >
-                        <li class="nav-item"><a href="" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="" class="nav-link">Sobre</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Minhas Especialidades</a></li>
                         <li class="nav-item"><a href="" class="nav-link">Meus Projetos</a></li>
-                        <li class="nav-item"><a href="" class="nav-link">Contatos</a></li>
                     </ul>
                 </nav>
             </div>
@@ -38,7 +48,7 @@
                     Tenho experiência em HTML, CSS, JavaScript, Python, e estou explorando novas tecnologias para criar soluções inovadoras.</p>
 
                 <div class="social">
-                    <p> Minhas Redes </p>
+                    <h1> Minhas Redes </h1>
                     <div class="linkedin" >
                         <a href="https://www.linkedin.com/in/ryanlucenasilva/" target="_blank" class="linkedin" ><i class="fa-brands fa-linkedin social-icon"></i></a>
                         <span>linkedin</span>
