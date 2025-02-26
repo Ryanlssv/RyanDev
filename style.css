@@ -44,7 +44,6 @@ html{
 
 .nav-item a:hover{
     color: #ccc;
-    text-decoration:underline;
     transform: scale(1.1);
 }
 
@@ -113,7 +112,7 @@ html{
 }
 
 .sobre{
-    font-size: 2.5vh;
+    font-size: 2.3vh;
     text-align: justify;
     width: 79%;
     margin-left: 0%;
@@ -224,8 +223,9 @@ html{
 
 .container-habilidades{
     position: absolute;
-    width: 45%;
+    width: 75%;
     height: 35%;
+    display: flex;
     top: 60%;
     left:0% ;
 }
@@ -233,14 +233,49 @@ html{
 .github-status{
     width: 100%;
     font-size: 7vh;
-    display: flex;
     left: 0;
     align-items: center;
 }
 
 .github-status img {
-    width: 100%;
     opacity: 0;
     transform: translateY(-10px);
     animation: fadeIn 2s ease forwards;
 }
+
+.limguagens{
+    width: 40%;
+    font-size: 8vh;
+    text-align: center;
+    position: absolute;
+    left: 70vh;
+    top: 3vh;
+    opacity: 0;
+    transform: translateY(-10px);
+    animation: fadeIn 2s ease forwards;
+}
+
+.limguagens i {
+    margin-left: 2vh;
+}
+
+.barra-div{
+    position: absolute;
+    width: 3px;
+    height: 199px;
+    background-color: white;
+    left: 59%;
+    opacity: 0;
+    transform: translateY(-10px);
+    animation: fadeIn 2s ease forwards;
+}
+
+.tech-icon {
+    transition: transform 0.3s ease-in-out;
+  }
+  .tech-icon:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+  }
+  
+  
