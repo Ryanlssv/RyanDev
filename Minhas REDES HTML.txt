@@ -1,0 +1,18 @@
+    <div id="SEC1" class="container-habilidades">
+        <div class="social">
+            <h1> Minhas Redes </h1>
+            <div class="linkedin" >
+                <a href="https://www.linkedin.com/in/ryanlucenasilva/" target="_blank" class="linkedin" ><i class="fa-brands fa-linkedin social-icon"></i></a>
+                <span>linkedin</span>
+            </div>
+           <div class="github">
+             <a href="https://github.com/Ryanlssv" target="_blank" class="github" ><i class="fa-brands fa-github social-icon "></i></a>
+             <span>GitHub</span>
+          </div>  
+          <div class="instagram">
+             <a href="" target="_blank" class="github" ><i id="teste" class="fa-brands fa-instagram social-icon"></i></a>
+             <span>instagram</span>
+          </div>  
+      </div>
+        
+    </div>

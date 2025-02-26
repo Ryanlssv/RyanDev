@@ -12,3 +12,8 @@
     font-family: "Akira";
     src: url("./font/AkiraExpandedDemo.otf");
   }
+
+@font-face {
+    font-family: "Roboto";
+    src: url("./font/Roboto-Medium.ttf");
+  }  
