@@ -79,7 +79,7 @@
                 Meus projetos criados
             </h1>
             <p class="tex-projetos">
-                Desenvolvir Projetos acadêmicos e pessoais que envolveram aplicar boas práticas de programação, desenvolvimento de soluções web, utilizando linguagens de programação e ferramentas como HTML, CSS, JavaScript, Python e outras, focando na criação do Front-end & Back-end.
+                Meus Projetos acadêmicos e pessoais que envolveram aplicar boas práticas de programação, desenvolvimento de soluções web, utilizando linguagens de programação e ferramentas como HTML, CSS, JavaScript, Python e outras, focando na criação do Front-end & Back-end.
             </p>
             <div class="barra-div-projetos" ></div>
 
@@ -92,7 +92,21 @@
 
 -->
 
+    <div class="container" id="projetos-container">
+         <!-- Projetos serão carregados dinamicamente -->
     </div>
+
+<!-- Modal -->
+    <div id="modal" class="modal-bg">
+        <div class="modal-content">
+            <img id="modal-imagem" src="" alt="">
+            <h2 id="modal-titulo"></h2>
+            <p id="modal-descricao"></p>
+            <button class="close-btn" onclick="fecharModal()">Fechar</button>
+        </div>
+    </div>
+
+</div>
     <footer class="footer">
         <div class="container-footer">
             <div class="footer-info">
@@ -103,4 +117,5 @@
     </footer>
 </body>
 <script src="https://kit.fontawesome.com/02669f3445.js" crossorigin="anonymous"></script>
+<script src="./JS/scriptModal.js"></script>
 </html>
