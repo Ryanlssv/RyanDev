@@ -118,24 +118,66 @@
 
      /* Modal */
      .modal-bg {
-         display: none;
-         position: fixed;
-         top: 0;
-         left: 0;
-         width: 100%;
-         height: 100%;
-         background-color: rgba(0, 0, 0, 0.6);
-         justify-content: center;
-         align-items: center;
-     }
-     .modal-content {
-         background: #fff;
-         padding: 20px;
-         width: 400px;
-         border-radius: 8px;
-         text-align: center;
-         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-     }
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        animation: fadeIn 0.3s ease-in-out forwards;
+    }
+    
+    /* Animação de entrada */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    .modal-content {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        transform: scale(0.8);
+        opacity: 0;
+        font-family:Arial, Helvetica, sans-serif;
+        animation: zoomIn 0.3s ease-out forwards;
+    }
+    
+    @keyframes zoomIn {
+        from {
+            transform: scale(0.8);
+            opacity: 0;
+        }
+        to {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    
+    /* Animação de saída */
+    .fechando {
+        animation: zoomOut 0.3s ease-in-out forwards;
+    }
+    
+    @keyframes zoomOut {
+        from {
+            transform: scale(1);
+            opacity: 1;
+        }
+        to {
+            transform: scale(0.8);
+            opacity: 0;
+        }
+    }
+    
      .close-btn {
          margin-top: 15px;
          padding: 8px 16px;
@@ -148,3 +190,26 @@
      .close-btn:hover {
          background: #cc0000;
      }
+
+     .modal-links {
+        display: flex;
+        margin-left: 30px;
+        gap: 10px;
+        margin-top: 15px;
+    }
+    
+    .btn {
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        background-color: #000000;
+        transition: 0.3s;
+    }
+    
+    .btn:hover {
+        background-color: #3f3f3f;
+        color: white;
+    }
+    

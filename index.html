@@ -95,7 +95,7 @@
 
 <div class="container">
 
-    <div id="Armazem" class="projeto" data-titulo="Projeto 1" data-descricao="Este é um site de e-commerce criado com HTML, CSS e JS." onclick="abrirModal(this)">
+    <div id="Armazem" class="projeto" data-site="https://ryanlssv.github.io/Site-Armazem_Da_Eletronica/" data-github="https://github.com/Ryanlssv/Site-Armazem_Da_Eletronica" data-titulo="Armazem da Eletronica" data-descricao="Este é um site de e-commerce criado com HTML, CSS e JS." onclick="abrirModal(this)">
         <img style="width: 100%;" src="./src/img-cards/ArmazemCard.png" alt="">
         <h3 class="titulo-projeto" >Armazem da Eletronica</h3>
         <p class="descricao-projeto" >Armazém da Eletrônica, é um exemplo de plataforma de e-commerce para a venda online.</p>
@@ -103,7 +103,7 @@
             <i style="color: #d3bc13 ;" class="tech-icon fa-brands fa-js"></i></p>
     </div>
 
-    <div id="GTA" class="projeto" data-titulo="Projeto 2" data-descricao="Este é um site de e-commerce criado com HTML, CSS e JS." onclick="abrirModal(this)">
+    <div id="GTA" class="projeto" data-site="https://ryanlssv.github.io/Projeto-Site-Gta/" data-github="https://github.com/Ryanlssv/Projeto-Site-Gta" data-titulo="Site Rockstars GTA V" data-descricao="Este é um site de e-commerce criado com HTML, CSS e JS." onclick="abrirModal(this)">
         <img style="width: 100%;" src="./src/img-cards/gtaCard.png" alt="">
         <h3 class="titulo-projeto" >Site Rockstars GTA V</h3>
         <p class="descricao-projeto" >Recriação da pagina Rockstar games GTA V, para aplicar a pratica de Frontend </p>
@@ -111,7 +111,7 @@
             <i style="color: #d3bc13 ;" class="tech-icon fa-brands fa-js"></i></p>
     </div>
 
-    <div id="Churas" class="projeto" data-titulo="Projeto 3" data-descricao="Este é um site de e-commerce criado com HTML, CSS e JS." onclick="abrirModal(this)">
+    <div id="Churas" class="projeto" data-site="https://ryanlssv.github.io/projeto-Site-DevWeb/" data-github="https://github.com/Ryanlssv/projeto-Site-DevWeb" data-titulo="Churascaria Brasa viva" data-descricao="Este é um site de e-commerce criado com HTML, CSS e JS." onclick="abrirModal(this)">
         <img style="width: 100%;" src="./src/img-cards/churasCard.png" alt="">
         <h3 class="titulo-projeto" >Churascaria Brasa viva</h3>
         <p class="descricao-projeto" >Pagina informacional sobre uma Churascaria, Criado para a pratica de Frontend</p>
@@ -119,21 +119,21 @@
             <i style=" color: #d3bc13 ;" class="tech-icon fa-brands fa-js"></i></p>
     </div>
 
-    <div id="Python" class="projeto" data-titulo="Projeto 3" data-descricao="Este é um site de e-commerce criado com HTML, CSS e JS." onclick="abrirModal(this)">
+    <div id="Python" class="projeto" data-site="https://github.com/Ryanlssv/Projetos-Python" data-github="https://github.com/Ryanlssv/Projetos-Python" data-titulo="Projetos utilizando Python" data-descricao="Este é um site de e-commerce criado com HTML, CSS e JS." onclick="abrirModal(this)">
         <img style="width: 100%;" src="./src/img-cards/Python.png" alt="">
         <h3 class="titulo-projeto" >Projetos utilizando Python</h3>
         <p class="descricao-projeto" >Tarefas de ánalise de dados , Automação de tarefas e Criação de pequenos algoritimos IA</p>
         <p class="linguagens-projetos" ><i style="color: #ffde57 ;" class="tech-icon fa-brands fa-python"></i></p>
     </div>
 
-    <div id="Github"  class="projeto" data-titulo="Projeto 3" data-descricao="Este é um site de e-commerce criado com HTML, CSS e JS." onclick="abrirModal(this)">
+    <div id="Github"  class="projeto" data-site="https://github.com/Ryanlssv" data-github="https://github.com/Ryanlssv" data-titulo="Repositorios com Projetos e Aprendisados." data-descricao="Este é um site de e-commerce criado com HTML, CSS e JS." onclick="abrirModal(this)">
         <img style="width: 100%;" src="./src/img-cards/Git.png" alt="">
         <h3 class="titulo-projeto" >Repositorios com Projetos e Aprendisados.</h3>
         <p class="descricao-projeto" >Projetos JavaScript, Java, e outras Linguagens</p>
         <p class="linguagens-projetos" ><i style="color: #444343 ;" class="tech-icon fa-brands fa-github"></i></p>
     </div>
 
-    <div id="Github"  class="projeto" data-titulo="Projeto 3" data-descricao="Este é um site de e-commerce criado com HTML, CSS e JS." onclick="abrirModal(this)">
+    <div id="Github"  class="projeto" data-site="https://github.com/Ryanlssv" data-github="https://github.com/Ryanlssv" data-titulo="Novos Projetos em Breve" data-descricao="Este é um site de e-commerce criado com HTML, CSS e JS." onclick="abrirModal(this)">
         <img style="width: 100%;" src="./src/img-cards/embreve.png" alt="">
         <h3 class="titulo-projeto" >Novos Projetos em Breve</h3>
         <p class="descricao-projeto" >irei atualizar e adicionar novos Projetos</p>
@@ -141,14 +141,21 @@
     
 
 <!-- Modal -->
-    <div id="modal" class="modal-bg">
-        <div class="modal-content">
-            <img id="modal-imagem" src="" alt="">
-            <h2 id="modal-titulo"></h2>
-            <p id="modal-descricao"></p>
-            <button class="close-btn" onclick="fecharModal()">Fechar</button>
+<div id="modal" class="modal-bg" onclick="fecharModal(event)">
+    <div class="modal-content">
+        <h2 id="modal-titulo"></h2>
+        <p id="modal-descricao"></p>
+
+        <!-- Botões para acessar o site e GitHub -->
+        <div class="modal-links">
+            <a id="modal-site" href="#" target="_blank" class="btn"><i class="fa-solid fa-globe"></i> Acessar o Site</a>
+            <a id="modal-github" href="#" target="_blank" class="btn"><i class="fa-brands fa-github"></i> Codigo GitHub</a>
         </div>
+
+        <button class="close-btn" onclick="fecharModal()">Fechar</button>
     </div>
+</div>
+
 
 </div>
     <footer class="footer">
