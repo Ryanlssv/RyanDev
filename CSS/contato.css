@@ -1,0 +1,94 @@
+#CONTATO{
+    position: absolute;
+    top: -25%;
+}
+
+.Contato{
+    width: 100%;
+    height: 50%;
+    top: 100%;
+    left: 0;
+    position: absolute;
+    color: #fff;
+}
+
+.title-contato{
+    color: rgb(255, 255, 255);
+    font-size: 5vh;
+    font-family: "Roboto";
+    padding-left: 11%;
+    text-align: justify;
+    transform: translateY(-10px);
+    animation: fadeIn 2s ease forwards;
+}
+
+.tex-contato{
+    color: rgb(255, 255, 255);
+    font-size: 2.3vh;
+    text-align: justify;
+    width:48%;
+    margin-top: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 11%;
+    transform: translateY(-10px);
+    animation: fadeIn 2s ease forwards;
+}
+
+.barra-div-contato{
+    position: absolute;
+    width: 3px;
+    height:260px;
+    margin-top: 2%;
+    background-color: white;
+    left: 50%;
+    opacity: 0;
+    transform: translateY(-10px);
+    animation: fadeIn 2s ease forwards;
+}
+
+.Contato img{
+    position: absolute;
+    width: 20%;
+    left: 25%;
+}
+
+.contatos-redes{
+    width: 40%;
+    position: absolute;
+    margin-top: 30px;
+    left: 55%;
+    font-size: 20px;
+    font-family: "Arial";
+}
+
+.social-icon-contato{
+    color: #fff;
+    font-size: 30px;
+}
+
+.contatos-redes ul{
+    list-style: none;
+    text-align: justify;
+}
+
+.contatos-redes li{
+    padding-top: 20px;
+}
+
+.contatos-redes span{
+    padding-left: 10px;
+}
+
+.nav-item-contato{
+    color: #bdbdbd;
+    font-size: 2.5vh;
+    font-family: "Roboto";
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.5s, transform 0.5s;
+}
+
+.nav-item-contato:hover{
+    color: #ffffff;
+    transform: scale(1.1);
+}

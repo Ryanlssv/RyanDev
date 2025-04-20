@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./CSS/SecProjetos.css">
     <link rel="stylesheet" href="./CSS/font.css">
     <link rel="stylesheet" href="./CSS/animacao.css">
+    <link rel="stylesheet" href="./CSS/contato.css">
+    <link rel="stylesheet" href="./CSS/rodape.css">
     <link rel="shortcut icon" href="./src/logo/R L logo.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <title> Dev - Ryan</title>
@@ -37,7 +39,7 @@
                     <ul class="nav" >
                         <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
                         <li class="nav-item"><a href="#PROJETOS" class="nav-link">Meus Projetos</a></li>
-                        <li class="nav-item"><a href="" class="nav-link">Contato</a></li>
+                        <li class="nav-item"><a href="#CONTATO" class="nav-link">Contato</a></li>
                         <li class="nav-item"><a href="https://github.com/Ryanlssv" target="_blank" ><i class="fa-brands fa-github social-icon "></i></a></li>
                         <li class="nav-item"><a href="https://www.linkedin.com/in/ryanlucenasilva/" target="_blank" class="linkedin" ><i class="fa-brands fa-linkedin social-icon"></i></a></li>
                     </ul>
@@ -73,7 +75,7 @@
             </div>
         </div> 
     </div>
-    <div class="sec-projetos">
+<div class="sec-projetos">
         <div id="PROJETOS" ><!-- Div Criada para ajuste do Btn Meus projetos --></div>
             <h1 class="title-projetos">
                 Meus projetos criados
@@ -83,14 +85,6 @@
             </p>
             <div class="barra-div-projetos" ></div>
 
-
-    <!-- CRIAR OS CARD PROJETOS MANUAL MENTE
-
-    * ADD MODAL CONTENT:
-            - um link para o github
-            - um link para acessa o projeto
-    
-    -->
 
 
 <div class="container">
@@ -140,32 +134,41 @@
     </div>
     
 
-<!-- Modal -->
-<div id="modal" class="modal-bg" onclick="fecharModal(event)">
-    <div class="modal-content">
-        <h2 id="modal-titulo"></h2>
-        <p id="modal-descricao"></p>
+    <!-- Modal -->
+    <div id="modal" class="modal-bg" onclick="fecharModal(event)">
+        <div class="modal-content">
+            <h2 id="modal-titulo"></h2>
+            <p id="modal-descricao"></p>
 
-        <div class="modal-links">
-            <a id="modal-site" href="#" target="_blank" class="btn"><i class="fa-solid fa-globe"></i> Acessar o Site</a>
-            <a id="modal-github" href="#" target="_blank" class="btn"><i class="fa-brands fa-github"></i> Codigo GitHub</a>
-        </div>
+             <div class="modal-links">
+                <a id="modal-site" href="#" target="_blank" class="btn"><i class="fa-solid fa-globe"></i> Acessar o Site</a>
+                <a id="modal-github" href="#" target="_blank" class="btn"><i class="fa-brands fa-github"></i> Codigo GitHub</a>
+            </div>
 
-        <button class="close-btn" onclick="fecharModal()">Fechar</button>
+            <button class="close-btn" onclick="fecharModal()">Fechar</button>
+         </div>
     </div>
 </div>
-
-<div class="Contato" >
-    <!--INICIANDO AREA DE CONTATO-->
+<div  class="Contato" >
+    <div id="CONTATO" ><!-- Div Criada para ajuste do Btn Meus projetos --></div>
+    <h1 class="title-contato">
+        Contato
+    </h1>
+    <p class="tex-contato">
+    Estou aberto a oportunidades no mundo tech, seja para trabalhos na criação de sites ou oferta de trabalho. Entre em contato comigo através das minhas redes ou email. </p>
+    <img src="./src/logo/R L logo.png" alt="">
+    <div class="barra-div-contato" ></div>
+    <div class="contatos-redes" >
+        <ul>
+            <li style=" color:#bdbdbd ; margin-left: 0px;font-family: Roboto; font-weight: bold;" ><i class="fa-solid fa-envelope social-icon-contato" style="color: #ffffff;"></i> <span>ryanlucenas.dev@gmail.com</span> </li>
+            <li><a class="nav-item-contato" href="https://github.com/Ryanlssv" target="_blank" ><i class="fa-brands fa-github social-icon-contato "></i><span> GitHub: Ryanlssv </span></a></li>
+            <li><a class="nav-item-contato" href="https://www.linkedin.com/in/ryanlucenasilva/" target="_blank" class="linkedin" ><i class="fa-brands fa-linkedin social-icon-contato"></i><span>linkedin: Ryan Lucena Silva </span></a></li>
+        </ul>
+    </div>
 </div>
-
-</div>
-    <footer class="footer">
-        <div class="container-footer">
-            <div class="footer-info">
-                <h1>Desenvolvido por Ryan Lucena</h1>
-                <p>Desenvolvido com HTML, CSS, JavaScript e Python</p>
-            </div>
+    <footer>
+        <div class="footer-info">
+            <h1>&copy; 2025 - Desenvolvido por Ryan Lucena </h1>
         </div>
     </footer>
 </body>
